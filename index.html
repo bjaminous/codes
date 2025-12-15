@@ -1,65 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Restaurant Chez Maman - Cuisine camerounaise authentique avec Ndolè, Eru, Poulet DG">
     <title>Chez Maman — Menu</title>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lora:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        :root{
-            --vert:#0d0e0d;
-            --rouge:#ce1126;
-            --beige:#fef5e7;
-            --noir:#252525;
-            --card-shadow:0 8px 24px rgba(0,0,0,.08);
-        }
-        *{box-sizing:border-box}
-        html{scroll-behavior:smooth}
-        body{
-            margin:0;
-            font-family:'Open Sans',system-ui,Segoe UI,Arial;
-            background:var(--beige);
-            color:var(--noir);
-            -webkit-font-smoothing:antialiased;
-        }
-        .container{width:90%;max-width:1100px;margin:0 auto;padding:20px}
-        header{
-            position:sticky;top:0;background:#fff;padding:12px 0;box-shadow:0 2px 12px rgba(0,0,0,.06);z-index:10
-        }
-        .header-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
-        .brand{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--vert)}
-        .brand .logo{font-family:'Dancing Script',cursive;font-size:1.6rem}
-        nav a{color:#5d4037;text-decoration:none;font-weight:600;margin-left:18px}
-        .hero{
-            background:linear-gradient(0deg,rgba(0,0,0,.18),rgba(0,0,0,.06)),url('image/cmr.jpg') center/cover no-repeat;
-            padding:80px 0 56px;
-            text-align:center;
-        }
-        .hero h1{font-family:'Dancing Script',cursive;font-size:2.6rem;margin:0;color:var(--vert)}
-        .hero p{color:#171716;margin-top:8px}
-
-        section{padding:48px 0}
-        .section-title{text-align:center;margin-bottom:28px}
-        .section-title h2{font-family:'Lora',serif;color:var(--vert);margin:0}
-
-        /* menu */
-        .menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-        .menu-card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:var(--card-shadow);display:flex;flex-direction:column;min-height:320px}
-        .menu-card img{width:100%;height:180px;object-fit:cover;display:block}
-        .menu-card .content{padding:14px;display:flex;flex-direction:column;flex:1}
-        .menu-card h3{margin:0 0 8px;color:var(--vert);font-size:1.05rem}
-        .menu-card p{margin:0 0 12px;color:#6b5b52;flex:1;font-size:.95rem}
-        .menu-card .meta{display:flex;justify-content:space-between;align-items:center}
-        .price{font-weight:700;color:var(--rouge)}
-
-        footer{background:var(--vert);color:#fff;padding:28px 0;text-align:center;margin-top:24px}
-
-        @media (max-width:600px){
-            .hero{padding:56px 0 40px}
-            .menu-card img{height:160px}
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lora:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lora:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"></noscript>
+    <style>:root{--vert:#0d0e0d;--rouge:#ce1126;--beige:#fef5e7;--noir:#252525;--card-shadow:0 8px 24px rgba(0,0,0,.08)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:'Open Sans',system-ui,Segoe UI,Arial;background:var(--beige);color:var(--noir);-webkit-font-smoothing:antialiased}.container{width:90%;max-width:1100px;margin:0 auto;padding:20px}header{position:sticky;top:0;background:#fff;padding:12px 0;box-shadow:0 2px 12px rgba(0,0,0,.06);z-index:10}.header-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--vert)}.brand .logo{font-family:'Dancing Script',cursive;font-size:1.6rem}nav a{color:#5d4037;text-decoration:none;font-weight:600;margin-left:18px}.hero{background:linear-gradient(0deg,rgba(0,0,0,.18),rgba(0,0,0,.06)),url('image/cmr.jpg') center/cover no-repeat;padding:80px 0 56px;text-align:center;min-height:400px}.hero h1{font-family:'Dancing Script',cursive;font-size:2.6rem;margin:0;color:var(--vert)}.hero p{color:#171716;margin-top:8px}section{padding:48px 0}.section-title{text-align:center;margin-bottom:28px}.section-title h2{font-family:'Lora',serif;color:var(--vert);margin:0}.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}.menu-card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:var(--card-shadow);display:flex;flex-direction:column;min-height:320px}.menu-card img{width:100%;height:180px;object-fit:cover;display:block;background:#e0e0e0}.menu-card .content{padding:14px;display:flex;flex-direction:column;flex:1}.menu-card h3{margin:0 0 8px;color:var(--vert);font-size:1.05rem}.menu-card p{margin:0 0 12px;color:#6b5b52;flex:1;font-size:.95rem}.menu-card .meta{display:flex;justify-content:space-between;align-items:center}.price{font-weight:700;color:var(--rouge)}footer{background:var(--vert);color:#fff;padding:28px 0;text-align:center;margin-top:24px}@media (max-width:600px){.hero{padding:56px 0 40px;min-height:300px}.menu-card img{height:160px}}</style>
 </head>
 <body>
     <header>
@@ -89,7 +39,13 @@
 
                 <div class="menu-grid">
                     <article class="menu-card">
-                        <img src="image/Ndole.jpg" alt="Ndolè — insérez votre image">
+                        <img src="image/Ndole.jpg" 
+                             srcset="image/Ndole-400.webp 400w, image/Ndole-800.webp 800w"
+                             sizes="(max-width: 600px) 400px, 800px"
+                             alt="Ndolè aux crevettes avec arachides" 
+                             loading="lazy"
+                             width="400" 
+                             height="180">
                         <div class="content">
                             <h3>Ndolè aux crevettes</h3>
                             <p>Feuilles de ndolè mijotées avec arachides, crevettes et viande. Servi avec plantain ou riz.</p>
@@ -100,7 +56,13 @@
                     </article>
 
                     <article class="menu-card">
-                        <img src="image/eru.jpg" alt="Eru — insérez votre image">
+                        <img src="image/eru.jpg" 
+                             srcset="image/eru-400.webp 400w, image/eru-800.webp 800w"
+                             sizes="(max-width: 600px) 400px, 800px"
+                             alt="Eru (Foli) avec viande et crevettes" 
+                             loading="lazy"
+                             width="400" 
+                             height="180">
                         <div class="content">
                             <h3>Eru (Foli)</h3>
                             <p>Feuilles d'eru cuisinées avec viande et crevettes, parfumées aux épices locales.</p>
@@ -111,7 +73,13 @@
                     </article>
 
                     <article class="menu-card">
-                        <img src="image/poulet.jpg" alt="Poulet DG — insérez votre image">
+                        <img src="image/poulet.jpg" 
+                             srcset="image/poulet-400.webp 400w, image/poulet-800.webp 800w"
+                             sizes="(max-width: 600px) 400px, 800px"
+                             alt="Poulet DG sauté aux légumes et plantain" 
+                             loading="lazy"
+                             width="400" 
+                             height="180">
                         <div class="content">
                             <h3>Poulet DG</h3>
                             <p>Poulet sauté aux légumes et plantain, plat convivial et généreux.</p>
@@ -122,7 +90,13 @@
                     </article>
 
                     <article class="menu-card">
-                    <img src="image/okok.jpg" alt="Okok — insérez votre image">
+                        <img src="image/okok.jpg" 
+                             srcset="image/okok-400.webp 400w, image/okok-800.webp 800w"
+                             sizes="(max-width: 600px) 400px, 800px"
+                             alt="Okok avec huile de palme" 
+                             loading="lazy"
+                             width="400" 
+                             height="180">
                         <div class="content">
                             <h3>Okok</h3>
                             <p>Feuilles d'okok pilées avec huile de palme et accompagnements traditionnels.</p>
